@@ -9,11 +9,11 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/TextView"
+        android:id="@+id/textoTexto"
         android:layout_width="231dp"
         android:layout_height="56dp"
         android:fontFamily="@font/adlam_display"
-        android:text="VERGACIÓN"
+        android:text="texto"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textColor="@color/verdeCoca"
@@ -27,16 +27,16 @@
         app:layout_constraintVertical_bias="0.213" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/botonUno"
         android:layout_width="165dp"
         android:layout_height="99dp"
         android:layout_marginTop="108dp"
-        android:text="Button"
-        app:layout_constraintTop_toBottomOf="@+id/TextView"
+        android:text="Boton"
+        app:layout_constraintTop_toBottomOf="@+id/textoTexto"
         tools:layout_editor_absoluteX="123dp" />
 
     <TextView
-        android:id="@+id/textTexto"
+        android:id="@+id/textoUno"
         android:layout_width="215dp"
         android:layout_height="52dp"
         android:text="JessiApp"
@@ -45,5 +45,16 @@
         android:textSize="34sp"
         tools:layout_editor_absoluteX="103dp"
         tools:layout_editor_absoluteY="118dp" />
+
+    <TextView
+        android:id="@+id/editText"
+        android:layout_width="199dp"
+        android:layout_height="49dp"
+        android:text="editText"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="112dp"
+        tools:layout_editor_absoluteY="41dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
