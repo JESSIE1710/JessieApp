@@ -8,32 +8,13 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/textoTexto"
-        android:layout_width="231dp"
-        android:layout_height="56dp"
-        android:fontFamily="@font/adlam_display"
-        android:text="texto"
-        android:textAlignment="center"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textColor="@color/verdeCoca"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.57"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.213" />
-
     <Button
         android:id="@+id/botonUno"
         android:layout_width="165dp"
         android:layout_height="99dp"
-        android:layout_marginTop="108dp"
         android:text="Boton"
-        app:layout_constraintTop_toBottomOf="@+id/textoTexto"
-        tools:layout_editor_absoluteX="123dp" />
+        tools:layout_editor_absoluteX="123dp"
+        tools:layout_editor_absoluteY="342dp" />
 
     <TextView
         android:id="@+id/textoUno"
@@ -43,18 +24,17 @@
         android:textAlignment="center"
         android:textColor="#101C7C"
         android:textSize="34sp"
-        tools:layout_editor_absoluteX="103dp"
-        tools:layout_editor_absoluteY="118dp" />
+        tools:layout_editor_absoluteX="98dp"
+        tools:layout_editor_absoluteY="183dp" />
 
-    <TextView
+    <EditText
         android:id="@+id/editText"
-        android:layout_width="199dp"
-        android:layout_height="49dp"
-        android:text="editText"
-        android:textAlignment="center"
-        android:textSize="34sp"
-        android:textStyle="bold"
-        tools:layout_editor_absoluteX="112dp"
-        tools:layout_editor_absoluteY="41dp" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Name"
+        tools:layout_editor_absoluteX="111dp"
+        tools:layout_editor_absoluteY="52dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

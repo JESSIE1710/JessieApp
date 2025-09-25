@@ -4,5 +4,10 @@
     <color name="white">#FFFFFFFF</color>
     <color name="gris">#FBAAAAAA</color>
     <color name="azulito">#09106B</color>
-    <color name="verdeCoca">#107C55</color>
+    <color name="rojo">#DC0F1B</color>
+    <color name="amarillo">#F4DC02</color>
+    <color name="verde">#009653</color>
+    <color name="morado">#9C27B0</color>
+    <color name="cafe">#433B04</color>
+    <color name="naranja">#FF9800</color>
 </resources>
