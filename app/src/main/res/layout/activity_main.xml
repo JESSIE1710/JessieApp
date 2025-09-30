@@ -6,26 +6,36 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/aguamarina"
     tools:context=".MainActivity">
 
     <Button
         android:id="@+id/botonUno"
         android:layout_width="165dp"
         android:layout_height="99dp"
+        android:backgroundTint="#009688"
+        android:fontFamily="monospace"
+
+
         android:text="Boton"
+        android:textColorLink="#0E1010"
+        android:textSize="24sp"
+        android:textStyle="bold"
         tools:layout_editor_absoluteX="123dp"
-        tools:layout_editor_absoluteY="342dp" />
+        tools:layout_editor_absoluteY="615dp" />
 
     <TextView
         android:id="@+id/textoUno"
-        android:layout_width="215dp"
-        android:layout_height="52dp"
+        android:layout_width="269dp"
+        android:layout_height="128dp"
+        android:fontFamily="@font/anton"
+        android:rotationX="0"
         android:text="JessiApp"
         android:textAlignment="center"
-        android:textColor="#101C7C"
-        android:textSize="34sp"
-        tools:layout_editor_absoluteX="98dp"
-        tools:layout_editor_absoluteY="183dp" />
+        android:textColor="#DCDDE6"
+        android:textSize="60sp"
+        tools:layout_editor_absoluteX="71dp"
+        tools:layout_editor_absoluteY="243dp" />
 
     <EditText
         android:id="@+id/editText"
@@ -34,6 +44,7 @@
         android:ems="10"
         android:inputType="text"
         android:text="Name"
+        android:textColor="#F6F0F0"
         tools:layout_editor_absoluteX="111dp"
         tools:layout_editor_absoluteY="52dp" />
 
