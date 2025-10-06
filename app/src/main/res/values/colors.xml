@@ -11,4 +11,10 @@
     <color name="cafe">#433B04</color>
     <color name="naranja">#FF9800</color>
     <color name="aguamarina">#F211353A</color>
+    <color name="verdeFondo">#1c4129</color>
+    <color name="verdeBotones">#3b7c53</color>
+    <color name ="paraTexto">#54ab74</color>
+    <!-- === COLORES RECOMENDADOS PARA EL RATINGBAR === -->
+    <color name="ratingBarDorado">#FFC107</color> <!-- Dorado Intenso -->
+    <color name="ratingBarAmarillo">#FFEB3B</color>
 </resources>

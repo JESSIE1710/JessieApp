@@ -1,51 +1,156 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/aguamarina"
+    android:background="@color/verdeFondo"
+    android:textDirection="anyRtl"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/botonUno"
-        android:layout_width="165dp"
-        android:layout_height="99dp"
-        android:backgroundTint="#009688"
-        android:fontFamily="monospace"
+    <!-- CHECKBOX -->
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:buttonTint="#EBF4F0F0"
+        android:checked="false"
+        android:text="Es azul"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-
-        android:text="Boton"
-        android:textColorLink="#0E1010"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        tools:layout_editor_absoluteX="123dp"
-        tools:layout_editor_absoluteY="615dp" />
-
-    <TextView
-        android:id="@+id/textoUno"
-        android:layout_width="269dp"
-        android:layout_height="128dp"
-        android:fontFamily="@font/anton"
-        android:rotationX="0"
-        android:text="JessiApp"
-        android:textAlignment="center"
-        android:textColor="#DCDDE6"
-        android:textSize="60sp"
-        tools:layout_editor_absoluteX="71dp"
-        tools:layout_editor_absoluteY="243dp" />
-
+    <!-- EDITTEXT -->
     <EditText
         android:id="@+id/editText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:ems="10"
         android:inputType="text"
-        android:text="Name"
+        android:text="Numero"
         android:textColor="#F6F0F0"
-        tools:layout_editor_absoluteX="111dp"
-        tools:layout_editor_absoluteY="52dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox" />
+
+    <!-- TEXTVIEW PRINCIPAL -->
+    <TextView
+        android:id="@+id/textoUno"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:fontFamily="@font/anton"
+        android:text="JessiApp"
+        android:textAlignment="center"
+        android:textColor="#DCDDE6"
+        android:textSize="60sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
+
+    <!-- TEXTVIEWS PARA EL EJEMPLO DE ONCLICK -->
+    <TextView
+        android:id="@+id/textoHola"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Hola"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textoUno" />
+
+    <TextView
+        android:id="@+id/textoHello"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Hello"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textoHola" />
+
+    <!-- TEXTVIEW PARA MOSTRAR RESULTADOS (FALTABA) -->
+    <TextView
+        android:id="@+id/txtResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Resultado aparecerá aquí"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textoHello" />
+
+    <!-- BOTONES -->
+
+
+    <!-- RATINGBAR -->
+
+    <Button
+        android:id="@+id/botonUno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@color/verdeBotones"
+        android:text="Boton"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtResultado" />
+
+    <Button
+        android:id="@+id/BtnTamano"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:backgroundTint="@color/verdeBotones"
+        android:text="Cambiar Tamaño"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.523"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/botonUno" />
+
+    <Button
+        android:id="@+id/BtnCambiar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@color/verdeBotones"
+        android:text="Cambiar Texto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BtnTamano" />
+
+    <Button
+        android:id="@+id/btnEntero"
+        style="@style/boton_derecho"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:backgroundTint="@color/verdeBotones"
+        android:text="Entero"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.391"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BtnCambiar" />
+
+    <RatingBar
+        android:id="@+id/valoracion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:progressTint="@color/ratingBarDorado"
+        android:progressBackgroundTint="#70ffffff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnEntero" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
